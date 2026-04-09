@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ගුරු අභියෝගය - 120 MCQ Full Exam</title>
+    <title>ගුරු අභියෝගය - 100 MCQ Full Exam</title>
     <style>
         :root {
             --primary: #2c3e50; --secondary: #3498db; --success: #27ae60;
@@ -232,7 +232,7 @@
     ];
 
     let currentIdx = 0;
-    let userAnswers = new Array(120).fill(null);
+    let userAnswers = new Array(100).fill(null);
     let timeLeft = 3600;
     let isEnded = false;
 
@@ -251,7 +251,7 @@
             let m = Math.floor(timeLeft/60), s = timeLeft%60;
             document.getElementById('timer').innerText = m+":"+(s<10?'0':'')+s;
         }
-    }, 1000);
+    }, 120000);
 
     function renderDots() {
         const grid = document.getElementById('progress-dots');
@@ -314,7 +314,7 @@
             row.innerHTML = `<td>${i+1}</td><td>${q.q}</td><td>${userAnswers[i]!==null?q.a[userAnswers[i]]:'-'}</td><td>${q.a[q.c]}</td>`;
             body.appendChild(row);
         });
-        document.getElementById('final-score').innerText = score + " / 120";
+        document.getElementById('final-score').innerText = score + " / 100";
         window.scrollTo(0,0);
     }
 
