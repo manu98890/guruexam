@@ -98,7 +98,7 @@
 <div class="main-wrapper" id="exam-ui">
     <div class="progress-grid" id="progress-dots"></div>
     <div class="quiz-card">
-        <div id="q-header" style="font-size: 13px; color: #666; margin-bottom: 10px;">ප්‍රශ්නය 1/120</div>
+        <div id="q-header" style="font-size: 13px; color: #666; margin-bottom: 10px;">ප්‍රශ්නය 1/100</div>
         <div class="question-text" id="q-text">ප්‍රශ්න පූරණය වෙමින් පවතී...</div>
         <div class="options-list" id="opt-list"></div>
         <div class="nav-buttons">
@@ -111,7 +111,7 @@
 <div id="result-area">
     <div class="quiz-card">
         <h2 style="text-align: center;">විභාග වාර්තාව</h2>
-        <h1 style="text-align: center; color: var(--secondary);" id="final-score">0 / 120</h1>
+        <h1 style="text-align: center; color: var(--secondary);" id="final-score">0 / 100</h1>
         <div style="overflow-x: auto;">
             <table class="summary-table">
                 <thead><tr><th>#</th><th>ප්‍රශ්නය</th><th>ඔබේ පිළිතුර</th><th>නිවැරදි පිළිතුර</th></tr></thead>
@@ -294,7 +294,7 @@
         renderDots();
     }
 
-    function nextQ() { if(currentIdx < 119) { currentIdx++; renderQuestion(); } }
+    function nextQ() { if(currentIdx < 99) { currentIdx++; renderQuestion(); } }
     function prevQ() { if(currentIdx > 0) { currentIdx--; renderQuestion(); } }
 
     function confirmFinish() { if(confirm("ඔබට විශ්වාසද? විභාගය අවසන් කිරීමට අවශ්‍යද?")) finishQuiz(); }
