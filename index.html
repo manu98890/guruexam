@@ -251,7 +251,7 @@
             let m = Math.floor(timeLeft/60), s = timeLeft%60;
             document.getElementById('timer').innerText = m+":"+(s<10?'0':'')+s;
         }
-    }, 120000);
+    }, 1000);
 
     function renderDots() {
         const grid = document.getElementById('progress-dots');
